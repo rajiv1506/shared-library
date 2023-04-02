@@ -1,5 +1,5 @@
-package org.example
+package com.my_playground.example
 
-def hello(name) {
-  echo "Hello, ${name}!"
+def call(Map params) {
+    echo "Hello, ${params.name}!"
 }
