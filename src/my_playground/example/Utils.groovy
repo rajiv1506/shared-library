@@ -1,4 +1,4 @@
-package my_playground.example
+package my_playground.example;
 
 class Utils {
     void printMessage(String message) {
