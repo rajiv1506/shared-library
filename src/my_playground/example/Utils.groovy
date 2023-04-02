@@ -1,8 +1,8 @@
 package my_playground.example
 
 class Utils {
-
+    String myVariable = 'Hello from my library!'
     static def myfunction() {
-        echo 'Hello from my library!'
+        echo myVariable
     }
 }
