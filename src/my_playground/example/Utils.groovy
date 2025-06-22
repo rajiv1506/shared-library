@@ -1,6 +1,6 @@
 package my_playground.example
 
-class Utilities implements Serializable {
+class Utils implements Serializable {
     def steps
 
     Utilities(steps) {
