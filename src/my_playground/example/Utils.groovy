@@ -3,7 +3,7 @@ package my_playground.example
 class Utils implements Serializable {
     def steps
 
-    Utilities(steps) {
+    Utils(steps) {
         this.steps = steps
     }
 
