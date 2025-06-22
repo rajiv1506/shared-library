@@ -1,3 +1,3 @@
-package my_playground.example
-
-def myVariable = 'Hello World'
+def call(String name = 'World') {
+    echo "Hello, ${name}!"
+}
