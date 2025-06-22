@@ -1,8 +1,13 @@
 package my_playground.example
 
-class Utils {
-    String myVariable = 'Hello from my library!'
-    static def myfunction() {
-        echo(myVariable)
+class Utilities implements Serializable {
+    def steps
+
+    Utilities(steps) {
+        this.steps = steps
+    }
+
+    def printDate() {
+        steps.echo "Current date: ${new Date()}"
     }
 }
