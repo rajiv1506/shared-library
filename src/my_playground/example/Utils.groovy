@@ -15,4 +15,9 @@ class Utils implements Serializable {
         steps.sh "git clone -b ${branch} ${repoUrl}"
         steps.sh "cd terraform && cat main.tf"
     }
+
+    def anotherclone(String repoUrl, String branch = 'main') {
+        steps.git url: repoUrl, branch: branch
+        steps.sh "cd terraform && cat variables.tf"
+    }
 }
