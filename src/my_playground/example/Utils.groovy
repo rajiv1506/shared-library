@@ -10,4 +10,8 @@ class Utils implements Serializable {
     def printDate() {
         steps.echo "Current date: ${new Date()}"
     }
+
+    def cloneRepo(String repoUrl, String branch = 'main') {
+        steps.sh "git clone -b ${branch} ${repoUrl}"
+    }
 }
