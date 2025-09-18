@@ -1,5 +1,7 @@
 package my_playground.example
 
+import java.text.SimpleDateFormat
+
 class Utils implements Serializable {
     def steps
 
@@ -8,7 +10,9 @@ class Utils implements Serializable {
     }
 
     def printDate() {
-        steps.echo "Current date: ${new Date()}"
+        def dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+        def date = new Date()
+        steps.echo "Current Date and Time: ${dateFormat.format(date)}"
     }
 
     def cloneRepo(String repoUrl, String branch = 'main') {
